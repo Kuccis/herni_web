@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Skladiste nový</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input class="btn btn-success" type="submit" value="Vytvořit" />
+    {{ form_end(form) }}
+
+
+            <a  class="btn btn-info" href="{{ path('skladiste_index') }}">Zpět na seznam</a>
+
+{% endblock %}

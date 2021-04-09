@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Skladiste seznam</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Název</th>
+          <th scope="col">Cena</th>
+          <th scope="col">Akce</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for skladiste in skladistes %}
+        <tr>
+
+          <td><a class="h5" href="{{ path('skladiste_show', { 'id': skladiste.id }) }}">{{ skladiste.id }}</a></td>
+          <td>{{ skladiste.nazev }}</td>
+          <td>{{ skladiste.cena }}</td>
+          <td><a class="btn btn-info" href="{{ path('skladiste_show', { 'id': skladiste.id }) }}">Zobrazit</a> <a class="btn btn-warning" href="{{ path('skladiste_edit', { 'id': skladiste.id }) }}">Upravit</a></td>
+        </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+
+
+
+
+            <a class="btn btn-primary" href="{{ path('skladiste_new') }}">Přidat novou položku</a>
+
+{% endblock %}

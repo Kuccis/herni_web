@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+
+        {% block body %}<h1>12. cvičení </h1>
+
+      <h4>12. cvičení, 1. úkol - Route /novot152 přístupná pouze pro admina</h4>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Jméno</th>
+      <th scope="col">Přijmení</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Radek</td>
+      <td>Novotný</td>
+      <td>emailnejaky@gmail.com</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Martin</td>
+      <td>Bělocký</td>
+      <td>dalsiemail@gmail.com</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Pavel</td>
+      <td>Novotný</td>
+      <td>dalsinejakyemail@seznam.cz</td>
+    </tr>
+  </tbody>
+</table>
+        <h4><a href="{{ path('homepage') }}">12. cvičení - 1_2. úkol</a></h4>
+        <h4><a href="{{ path('pdf') }}">12. cvičení - 2. úkol (Vypíše se text do PDF)</a></h4>
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

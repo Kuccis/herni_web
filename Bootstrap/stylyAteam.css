@@ -1,0 +1,451 @@
+body{
+  font-family: 'Rajdhani', sans-serif !important;
+  background-image: url("../foto/takto.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.our-team {
+  padding: 30px 0 30px;
+  margin-bottom: 30px;
+  background-color: #84848469;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.modal{
+  overflow-y:auto!important;
+}
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #001b5f82;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #001b5f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+#navbarTogglerDemo01{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 22px;
+}
+.navbar{
+  background-color: #001b5f82!important;
+}
+.nav-item{
+  margin-right: 20px;
+  text-align: center;
+}
+.nav-link{
+  color:white!important;
+}
+.nav-link:active{
+  font-weight: bold;
+}
+#rowMarginDelete{
+  margin-left:unset;
+  margin-right:unset;
+}
+#textUvod{
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 150px;
+  color:white;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+}
+#textAteam{
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 100px;
+  color:white;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+}
+.odkazReg{
+  color:white;
+   text-decoration: underline;
+}
+.odkazReg:hover{
+  color:gray;
+  font-weight: bold;
+}
+.uvodVety{
+  margin-left: auto;
+  margin-right: auto;
+}
+.uvodVety2{
+  margin-left: auto;
+  margin-right: auto;
+}
+.logoNavbar{
+  height: 110px;
+  width:110px;
+}
+#menuUvodLogo{
+  margin-left: auto;
+}
+#menuUvod{
+  margin-left: 10px;
+  margin-right: auto;
+}
+.loginButton {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #292b2c;
+    background-color: #fff;
+    display: block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    vertical-align: middle;
+    border: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.loginButton:hover{
+  background: #e8f2ff;
+}
+.form-group {
+    background: #e8f2ff none repeat scroll 0 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 65px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#discordLogo{
+  color:white!important;
+  margin-right:30px;
+}
+#discordLogo:hover{
+  color:#738adb!important;
+}
+#youtubeLogo{
+  color:white!important;
+  margin-right:3px;
+  margin-top:10px;
+}
+#youtubeLogo:hover{
+  color:red!important;
+}
+#instagramLogo{
+  color:white!important;
+  margin-right:7px;
+  float:left;
+  margin-top:10px;
+}
+#instagramLogo:hover{
+  color:#C13584!important;
+}
+#dropMenu{
+  margin-top: -35px;
+  left:unset!important;
+  margin-left: -1.5%;
+}
+.formularZadost{
+  text-align: left!important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width:600px;
+}
+#upozorneniFoto{
+	overflow: auto;
+	width:480px;
+	font-size:17px;
+}
+#vybratFoto{
+  margin-left: auto;
+  margin-right: auto;
+}
+#profilFotoNastaveni{
+  float:left;
+  margin-right: 10px;
+}
+#profilFoto{
+  margin-right: 10px;
+  margin-top: -2px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#jmenoUzivateleNavbar{
+  color:white;
+}
+#jmenoUFoto{
+  margin-bottom:20px;
+}
+.tabFormWl{
+  vertical-align:unset !important;
+}
+.odkazUnset{
+  color:black;
+}
+.odkazUnset:hover{
+  text-decoration: none;
+  color:unset;
+}
+.tlacitkoFormWl{
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  color: #292b2c;
+  background-color: #fff;
+  display: block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  vertical-align: middle;
+  border: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+#pravidlaUprava{
+  margin-top: 100px;
+  color:white;
+  margin-bottom: 30px;
+}
+.editorPravidel{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+span{
+  font-family: 'Rajdhani', sans-serif !important;
+}
+.userData{
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgba(45,45,45,0.85);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.ateamPozadi{
+  background-color: #84848469;
+  border-radius: 4px;
+}
+.profilAteam{
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left:15px;
+  margin-top:15px;
+
+}
+.ateamPopis{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.MsoNormal{
+  font-family: 'Rajdhani', sans-serif;
+}
+#indexText{
+  font-size: 27px;
+}
+#uvodTexto{
+  font-size: 23px;
+  padding:10px;
+}
+#errorMess{
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+#buttonIndex{
+  font-size: 30px;
+}
+.odsFoto{
+  margin-left: unset!important;
+  margin-right: unset!important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#profilLinky{
+  font-size: 22px;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+@media (max-width: 991px){
+  #indexText{
+    font-size: 20px;
+  }
+  #profilLinky {
+    margin-top: 15px;
+    margin-right: auto;
+  }
+  #dropMenu{
+    margin-top:unset!important;
+    margin-left: -6%;
+  }
+}
+@media (max-width: 885px){
+  #dropMenu{
+    margin-top:unset!important;
+    margin-left: -7%;
+  }
+}
+@media (max-width: 775px){
+  #dropMenu{
+    margin-top:unset!important;
+    margin-left: -8.5%;
+  }
+}
+@media (max-width: 765px){
+  #uvodTexto{
+    font-size: 17px;
+    padding:10px;
+  }
+}
+@media (max-width: 735px){
+  .uvodVety{
+    font-size: 33px!important;
+  }
+  .uvodVety2{
+    font-size: 27px!important;
+  }
+  #buttonIndex{
+    font-size: unset;
+  }
+  #indexText{
+    font-size: 20px;
+  }
+  #textUvod{
+    margin-top: 100px!important;
+  }
+  #textAteam{
+    margin-top: 100px!important;
+  }
+}
+@media (max-width: 636px){
+  #dropMenu{
+    margin-top:unset!important;
+    margin-left: -10%;
+  }
+}
+@media (max-width: 575px){
+  #errorMess{
+    width:80%;
+  }
+}
+@media (max-width: 451px){
+  #uvodTexto{
+    font-size: 14px;
+    padding:10px;
+  }
+  #textAteam{
+    padding:unset!important;
+    margin-right:unset!important;
+    margin-left:unset!important;
+  }
+  .row{
+    margin-left: unset!important;
+    margin-right: unset!important;
+  }
+}
+@media (max-width: 430px){
+  .form-group{
+    width:unset;
+  }
+}
+@media (max-width: 356px){
+  #errorMess{
+    width:90%;
+  }
+}

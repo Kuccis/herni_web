@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Skladiste</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Název</th>
+          <th scope="col">Cena</th>
+          <th scope="col">Akce</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <td>{{ skladiste.id }}</td>
+        <td>{{ skladiste.nazev }}</td>
+          <td>{{ skladiste.cena }}</td>
+          <td>
+
+
+                      <a  class="btn btn-warning" href="{{ path('skladiste_edit', { 'id': skladiste.id }) }}">Upravit</a>
+
+
+
+                      {{ form_start(delete_form) }}
+                        <input type="button" class="btn btn-danger" value="Smazat">
+                      {{ form_end(delete_form) }}
+</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+ <a class="btn btn-info" href="{{ path('skladiste_index') }}">Zpět na seznam</a>
+
+{% endblock %}

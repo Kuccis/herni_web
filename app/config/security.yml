@@ -1,0 +1,47 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+security:
+
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    access_control:
+        - { path: ^/novot152, roles: ROLE_ADMIN }
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_ADMIN
+    providers:
+        in_memory:
+            memory:
+                users:
+                    admin:
+                        password: $2y$13$eGjxOa51RU4FGA1byLhjXe5m5XAxivp1RU6NTP8jssAZ9e4HOROcS
+                        roles: 'ROLE_ADMIN'
+    encoders:
+        Symfony\Component\Security\Core\User\User: bcrypt
+
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        admin:
+           pattern: ^/
+           anonymous: ~
+           provider: in_memory
+           form_login:
+               login_path: /login
+               check_path: /login
+               default_target_path: /novot152
+           logout:
+               path: /logout
+               target: /
+               invalidate_session: true
+
+        main:
+           anonymous: ~
+            # activate different ways to authenticate
+            # logout_on_user_change: true
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            #http_basic: ~
+
+            # https://symfony.com/doc/current/security/form_login_setup.html
+            # form_login: ~
